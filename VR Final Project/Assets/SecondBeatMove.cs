@@ -12,7 +12,7 @@ public class SecondBeatMove : MonoBehaviour
     {
         if (gameObject.name.Contains("Clone"))
         {
-            beat.transform.Translate(0f, 0.0f, 0.005f);
+            beat.transform.Translate(0f, 0.0f, 0.01f);
         }
     }
 }

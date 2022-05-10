@@ -25,8 +25,8 @@ public class BeatGeneration : MonoBehaviour
         {
             if (!gameObject.name.Contains("Clone"))
             {
-                Debug.Log("Beat Creation");
-                Debug.Log(curr_beat);
+                /*Debug.Log("Beat Creation");
+                Debug.Log(curr_beat);*/
                 if (curr_beat == 49) { 
                     newbeat = Instantiate(beat, new Vector3(-20.0f, 2.0f, 0.0f), Quaternion.identity);
                     newbeat.transform.Rotate(0.0f, 90.0f, 0.0f, Space.Self);
@@ -41,7 +41,7 @@ public class BeatGeneration : MonoBehaviour
         }
         if (gameObject.name.Contains("Clone"))
         {
-            beat.transform.Translate(0f, 0.0f, 0.005f);
+            beat.transform.Translate(0f, 0.0f, 0.01f);
         }
     }
     IEnumerator readMap(string map)
