@@ -33,6 +33,7 @@ public class BeatCollision : MonoBehaviour
             {
                 if (gameObject.name == "Beat(Clone)")
                 {
+                    Debug.Log("hit ring");
                     Destroy(gameObject);
                     ScoreHandler((int)Math.Floor(100*(Math.Log10(textStart.combo + 1))), 1);
                     beatSound.Hit1();
@@ -44,6 +45,7 @@ public class BeatCollision : MonoBehaviour
             {
                 if (gameObject.name == "Beat(Clone)")
                 {
+                    Debug.Log("hit late");
                     Destroy(gameObject);
                     ScoreHandler((int)Math.Floor(100*(Math.Log10(textStart.combo + 1))), 1);
                     beatSound.Hit1();
